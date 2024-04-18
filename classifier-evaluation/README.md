@@ -47,7 +47,7 @@ The folder structure should be as follows:
 ### Classifier Evaluation
 For real CIFAR10 images:
 ``` bash
-python debiasing_eval_cifar.py --train_size={dataset_size} ==architecture='VGG' --synthetic
+python debiasing_eval_cifar.py --train_size={dataset_size} ==architecture='VGG'
 ```
 
 For original synthetic images:
@@ -57,7 +57,7 @@ python debiasing_eval_cifar.py --train_size={dataset_size} ==architecture='VGG' 
 
 For optimized synthetic images:
 ``` bash
-python debiasing_eval_cifar.py --train_size={dataset_size} ==architecture='VGG' --synthetic
+python debiasing_eval_cifar.py --train_size={dataset_size} ==architecture='VGG' --optimized
 ```
 
 **Note** Training progress has been rerouted from command line output to  `training_progress.txt` (shown in folder structure), so the terminal will not show updates during model training.
