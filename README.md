@@ -3,4 +3,6 @@ This repository hosts code for optimizing GAN-generated image performance on CIF
 The pipeline is carried out as follows:
 1. [Train a variational autoencoder](./vqvae/) on CIFAR10 images. This model will be used for feature extraction to compare original and synthetic images.
 2. [Perform GAN optimization](./gan-optimization/) to generate optimized synthetic images.
-3. Evaluate results using [classifier evaluation](./classifier-evaluation/). 
+3. Evaluate results using [classifier evaluation](./classifier-evaluation/).
+
+A GPU compatible with CUDA may be required to run some sections.
