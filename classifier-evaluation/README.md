@@ -42,7 +42,7 @@ The folder structure should be as follows:
     ```bash
     conda env create -f environment.yml
     ```
-    2. Activate the new environment: `conda activate myenv`
+    2. Activate the new environment: `conda activate pytorch-cifar`
 
 ### Classifier Evaluation
 For real CIFAR10 images:
