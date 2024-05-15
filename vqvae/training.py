@@ -75,7 +75,7 @@ ap.add_argument(
 ap.add_argument(
     "--training_config",
     help="path to training config_file (expected json file)",
-    default=os.path.join(PATH, "configs/base_training_config.json"),
+    default=os.path.join(PATH, "configs/base_training_config2.json"),
 )
 ap.add_argument(
     "--use_wandb",

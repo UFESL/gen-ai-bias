@@ -201,8 +201,8 @@ def reverse_z(netG, g_z, opt, label, clip='disabled'):
 
                 # Save individual images
                 cifar_classes = {
-                    0: 'plane',
-                    1: 'car',
+                    0: 'airplane',
+                    1: 'automobile',
                     2: 'bird',
                     3: 'cat',
                     4: 'deer',

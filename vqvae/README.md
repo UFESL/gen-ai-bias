@@ -11,7 +11,7 @@ This repo was used to train a Vector Quantized VAE (VQVAE) to perform feature ex
 ```bash
 conda env create -f environment.yml
 ```
-2. Activate the new environment: `conda activate myenv`
+2. Activate the new environment: `conda activate pytorch-vae2`
 
 ### Dataset Download
 This is needed to format the CIFAR10 dataset into the required `train_data.npz` and `eval_data.npz` files
