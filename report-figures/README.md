@@ -12,7 +12,7 @@ This section holds Jupyter notebooks for code supporting various figures in the 
     ├── butterflies.ipynb
     └── ...
     ```
-    Alternatively, [train your own]((https://github.com/huggingface/diffusion-models-class/blob/main/unit1/01_introduction_to_diffusers.ipynb)).
+    Alternatively, [train your own](https://github.com/huggingface/diffusion-models-class/blob/main/unit1/01_introduction_to_diffusers.ipynb).
 
 2. Set up the Conda environment
     1. Create the environment from the environment.yml file
