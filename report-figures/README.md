@@ -2,6 +2,7 @@ This section holds Jupyter notebooks for code supporting various figures in the 
 
 ## Sections
 - [butterfly figures](./butterflies.ipynb)
+- [celebA figures](./celeba.ipynb)
 
 ## Usage
 1. If you need to generate butterfly images, download [pretrained butterfly diffusion model](https://uflorida-my.sharepoint.com/:f:/g/personal/laurachang_ufl_edu/Ell4PMR4xzVBpGRsSU3AU9YBC9okm4s4uXs0rSYtEFIExw?e=rx52GQ) and place the folder directly in this directory:
@@ -20,4 +21,5 @@ This section holds Jupyter notebooks for code supporting various figures in the 
     conda env create -f environment.yml
     ```
     2. Activate the new environment: `conda activate expanded_diff_lin`
+    
 3. Run desired cells from Jupyter notebooks using the kernel created in step 2
