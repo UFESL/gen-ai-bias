@@ -1,2 +1,4 @@
 report-figures/ddpm-butterflies-64
+report-figures/data/cifar-10-python.tar.gz
+report-figures/data/cifar-10-batches-py
 __pycache__
