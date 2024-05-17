@@ -13,7 +13,10 @@ See https://github.com/UFESL/unaugment:
 
 To generate classifier performance confusion matrices, the [classifier-evaluation directory](https://github.com/UFESL/gen-ai-bias/tree/main/classifier-evaluation) can be used as a reference.
 
-## Post AAAI (Optimizing GAN-generated image performance on CIFAR10 classification)
+## t-SNE Visualization (real vs synthetic images)
+See the [report-figures](./report-figures/) directory.
+
+## Optimizing GAN-generated image performance on CIFAR10 classification
 
 The pipeline is carried out as follows:
 1. [Train a variational autoencoder](./vqvae/) on CIFAR10 images. This model will be used for feature extraction to compare original and synthetic images.
