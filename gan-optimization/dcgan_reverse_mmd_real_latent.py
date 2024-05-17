@@ -186,7 +186,7 @@ def reverse_z(netG, g_z, opt, label, clip='disabled'):
             if i % 500 == 0:
                 # g_z_approx_restored = torch.clone(g_z_approx)
                 # g_z_approx_restored = g_z_approx_restored.view(original_shape)
-                vutils.save_image(g_z_approx.data, f'g_z_approx_{i}.png', normalize=True)
+                # vutils.save_image(g_z_approx.data, f'g_z_approx_{i}.png', normalize=True)
                 # # save g(z_approx) image
                 # vutils.save_image(g_z_approx_restored.data, 'g_z_approx_final.png', normalize=True)
 
@@ -253,7 +253,7 @@ def reverse_gan(opt):
     g_z = torch.stack([data for data, target in cifar_train_subset])
     g_z = g_z * 2 - 1 # try to match range of gan outputs. maybe normalize before comparison
     
-    vutils.save_image(g_z.data, 'g_z.png', normalize=True)
+    # vutils.save_image(g_z.data, 'g_z.png', normalize=True)
 
     with dnnlib.util.open_url(opt.network) as f:
         netG = legacy.load_network_pkl(f)['G_ema'].to(device) # type: ignore

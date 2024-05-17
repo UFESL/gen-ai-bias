@@ -1,4 +1,12 @@
 report-figures/ddpm-butterflies-64
 report-figures/data/cifar-10-python.tar.gz
 report-figures/data/cifar-10-batches-py
+vqvae/data
+vqvae/my_models_on_cifar
+gan-optimization/pythae_cifar_vqvae2
+gan-optimization/data
+gan-optimization/out
+classifier-evaluation/data
+classifier-evaluation/checkpoint
+classifier-evaluation/output
 __pycache__

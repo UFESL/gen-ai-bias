@@ -24,7 +24,7 @@ def main():
         "-o",
         "--outdir",
         type=Path,
-        default=Path("."),
+        default=Path("./data"),
         help="the base folder in which to store the output",
     )
     parser.add_argument(
