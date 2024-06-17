@@ -1,0 +1,3 @@
+# Dimensional-Aware ControlNet
+1. The Scene Parse dataset needs to be [downloaded](http://sceneparsing.csail.mit.edu/) first and placed in the directory `data/ADEChallengeData2016`. Then, please run `prepare_ade.sh` before running for the first time to prepare the Scene Parse dataset appropriately. 
+2. Run `train.sh` to train and generate images. To customize the prompt, edit the `--validation-prompt` flag in `train.sh` to a different string. The three images in this folder are the default additional conditioning information.

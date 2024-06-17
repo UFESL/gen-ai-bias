@@ -15,8 +15,10 @@ Python v3.10+ and the following libraries:
 - torchmetrics
 - PIL
 - diffusers
+- transformers
 - datasets
 - pandas
+- einops
 
 **Important:** A GPU compatible with CUDA may be required to run some sections. Additionally, the Python libraries above with a CUDA version must also be downloaded (namely pytorch and torchvision).
 
@@ -35,12 +37,12 @@ Python v3.10+ and the following libraries:
 ## Face Generation (`face`)
 Please run the `face/celeba.ipynb` notebook.
 
-## AAAI Work
-See https://github.com/UFESL/unaugment:
-- [distribution bar graphs and original/synthetic CIFAR-10 image comparisons](https://github.com/UFESL/unaugment/blob/main/src/debiasing/subset-cifar10.ipynb)
-- [celeb-a diffusion model](https://colab.research.google.com/drive/1D56x2yyXy67vL-NsfgbA4tAKhic9abAc)
+## Class Imbalance Reduction (`class-imbalance`)
+Please run the `class-imbalance/subset-cifar10.ipynb` notebook.
 
-To generate classifier performance confusion matrices, the [classifier-evaluation directory](https://github.com/UFESL/gen-ai-bias/tree/main/classifier-evaluation) can be used as a reference.
+## Dimensional-Aware ControlNet (`dacn`)
+1. The Scene Parse dataset needs to be [downloaded](http://sceneparsing.csail.mit.edu/) first and placed in the directory `dacn/data/ADEChallengeData2016`. Then, please run `dacn/prepare_ade.sh` before running for the first time to prepare the Scene Parse dataset appropriately. 
+2. Run `dacn/train.sh` to train and generate images. To customize the prompt, edit the `--validation-prompt` flag in `dacn/train.sh` to a different string.
 
 ## Model Collapse (`model-collapse`)
 Optimizing GAN-generated image performance on CIFAR10 classification.
@@ -50,9 +52,6 @@ The pipeline is carried out as follows:
 2. Perform GAN optimization (`model-collapse/gan-optimization`) to generate optimized synthetic images.
 3. Evaluate results using classifier evaluation (`model-collapse/classifier-evaluation`).
 
-Run the full pipeline with:
-```bash
-cd model-collapse
-bash run.sh
-```
+Please see the `README.md` in each folder for specific instructions on running each pipeline section.
+
 For t-SNE visualization of real vs synthetic images, please run the `model-collapse/tsne.ipynb` notebook.

@@ -1,9 +1,11 @@
+# Classifier Evaluation
 This section adapts CIFAR10 classification code from [here](https://github.com/kuangliu/pytorch-cifar) and is used to evaluate performance of CIFAR10 images. Performance can be seen by generated classification reports and confusion matrices on the CIFAR10 testset. Testing uses the original CIFAR10 test split, while training is done on separate train and validation subsets.
 
-## Usage
+## Run Instructions
 
-### Prerequisites
-1. Move the synthetic images generated from [gan-optimization](../gan-optimization/) into `./data/gan-opt`
+### 1. Prerequisites
+Move the synthetic images generated from [gan-optimization](../gan-optimization/) into `./data/gan-opt`
+
 The folder structure should be as follows:
 ```bash
 .
@@ -32,19 +34,12 @@ The folder structure should be as follows:
 │   ├── model_config.json
 │   ├── model.pt
 │   ├── training_config.json
-├── dcgan_reverse_mmd_real_latent.py
+├── debiasing_eval_cifar.py
 ├── README.md
-└── run.sh
+└── utils.py
 ```
 
-2. Set up the Conda environment
-    1. Create the environment from the environment.yml file
-    ```bash
-    conda env create -f environment.yml
-    ```
-    2. Activate the new environment: `conda activate pytorch-cifar`
-
-### Classifier Evaluation
+### 2. Classifier Evaluation
 For real CIFAR10 images:
 ``` bash
 python debiasing_eval_cifar.py --train_size={dataset_size} --architecture='VGG'
@@ -60,6 +55,6 @@ For optimized synthetic images:
 python debiasing_eval_cifar.py --train_size={dataset_size} --architecture='VGG' --optimized
 ```
 
-Results are stored in ./output/
+Results are stored in `./output/`
 
 **Note** Training progress has been rerouted from command line output to  `training_progress.txt` (shown in folder structure), so the terminal will not show updates during model training.

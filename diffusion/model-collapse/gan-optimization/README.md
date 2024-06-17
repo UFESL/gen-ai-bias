@@ -1,8 +1,9 @@
+# GAN Optimization
 This repo performs the synthetic image optimization pipeline. Code for the original GAN model can be found [here](https://github.com/NVlabs/stylegan2-ada-pytorch) and code for latent vector recovery can be found [here](https://github.com/yxlao/reverse-gan.pytorch)
 
-## Usage
-### Prerequisites
-1. Move the trained vqvae model files into `./pythae_cifar_vqvae2`
+## Run Instructions
+### 1. Prerequisites
+Move the trained vqvae model files into `./pythae_cifar_vqvae2`
 
 The folder structure should be as follows:
 ```bash
@@ -26,10 +27,9 @@ The folder structure should be as follows:
 ├── README.md
 └── run.sh
 ```
-2. Set up conda environment as in [vqvae](../vqvae/README.md#conda-environment-setup)
 
-### Gan Optimization Pipeline
+### 2. GAN Optimization Pipeline
+Run with
 ```bash
-conda activate pytorch-vae2
 ./run.sh
 ```

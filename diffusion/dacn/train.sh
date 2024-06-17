@@ -1,0 +1,1 @@
+python train.py --pretrained_model "runwayml/stable-diffusion-v1-5" --output_dir "output" --validation_image "./ADE_train_00000196" --validation_prompt "an ornate bedroom with a chandelier" --validation_steps 100
