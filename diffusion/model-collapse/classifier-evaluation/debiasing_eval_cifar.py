@@ -78,12 +78,12 @@ redirect_progress_to_file = True # Instead of printing to std out
 
 if (args.optimized):
     save_folder = f'{save_folder}_synthetic_optimized'
-    dataset = torchvision.datasets.ImageFolder('./data/gan-opt/10000/opt_iter_5000/', transform=transform_train)
+    dataset = torchvision.datasets.ImageFolder(f'./data/gan-opt/{args.train_size}/opt_iter_5000/', transform=transform_train)
 elif (args.synthetic):
     save_folder = f'{save_folder}_synthetic'
     # dataset = torchvision.datasets.ImageFolder('./data/cifar-10-synthetic/', transform=transform_train)
     # dataset = torchvision.datasets.ImageFolder('./data/cifar-10-GAN/', transform=transform_train)
-    dataset = torchvision.datasets.ImageFolder('./data/gan-opt/10000/opt_iter_0/', transform=transform_train)
+    dataset = torchvision.datasets.ImageFolder(f'./data/gan-opt/{args.train_size}/opt_iter_0/', transform=transform_train)
 else:
     dataset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform_train)
 

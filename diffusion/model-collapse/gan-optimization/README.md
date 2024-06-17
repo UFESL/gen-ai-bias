@@ -31,5 +31,5 @@ The folder structure should be as follows:
 ### 2. GAN Optimization Pipeline
 Run with
 ```bash
-./run.sh
+bash run.sh
 ```
