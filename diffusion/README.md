@@ -1,8 +1,8 @@
 # Automated Data Augmentation using Diffusion Models
-This repository hosts code for content in the SRC Diffusion report.
+This repository hosts code for content in the SRC Diffusion report. We have tested all code using Linux and an NVIDIA RTX 4090 running CUDA version 12.4.
 
 ## Requirements
-Python v3.10+ and the following libraries:
+Python v3.11+ and the following libraries:
 - pytorch
 - torchvision
 - numpy
@@ -19,6 +19,7 @@ Python v3.10+ and the following libraries:
 - datasets
 - pandas
 - einops
+- python-dotenv
 
 **Important:** A GPU compatible with CUDA may be required to run some sections. Additionally, the Python libraries above with a CUDA version must also be downloaded (namely pytorch and torchvision).
 
