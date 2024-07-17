@@ -10,3 +10,4 @@ classifier-evaluation/data
 classifier-evaluation/checkpoint
 classifier-evaluation/output
 __pycache__
+.DS_Store
