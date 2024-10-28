@@ -14,7 +14,7 @@ bash download_datasets.sh
 The following Python packages are required: 
 
 - Pytorch
-- Pytorch-lightning
+- lightning
 - torchvision
 - tqdm
 - click
