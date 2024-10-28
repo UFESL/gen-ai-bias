@@ -20,6 +20,7 @@ Python v3.11+ and the following libraries:
 - pandas
 - einops
 - python-dotenv
+- accelerate
 
 **Important:** A GPU compatible with CUDA may be required to run some sections. Additionally, the Python libraries above with a CUDA version must also be downloaded (namely pytorch and torchvision).
 
