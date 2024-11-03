@@ -7,8 +7,10 @@ mkdir train
 mkdir val
 mkdir train/annotations
 mkdir train/images
+mkdir train/depth
 mkdir val/annotations
 mkdir val/images
+mkdir val/depth
 
 mv images/training/* train/images
 mv images/validation/* val/images
