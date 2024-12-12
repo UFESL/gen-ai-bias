@@ -25,6 +25,18 @@ Python v3.11+ and the following libraries:
 **Important:** A GPU compatible with CUDA may be required to run some sections. Additionally, the Python libraries above with a CUDA version must also be downloaded (namely pytorch and torchvision).
 
 ## ControlNet Conditioned Ensemble Model (`controlnet`)
+Please see the README.md in the folder for more specifics on how to run, such as custom pathing.
+1. Generate face images with StyleGAN or another GAN and place into a folder, such as `stylegan_output`.
+
+2. Generate new images with the GA images as conditioning to a ControlNet for a diffusion model by running
+```bash
+python controlnet_stylegan.py -i <input_dir> -m <mask_dir> -o <output_dir> -n <num_images> -p <prompt>
+```
+
+3. Calculate the FID score by running
+```bash
+python metrics.py -o <output_dir> -d <dataset_dir>
+```
 
 ## Masked Conditioned Ensemble Model (`masked`)
 Please see the README.md in the folder for more specifics on how to run, such as custom pathing.
