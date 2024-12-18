@@ -57,3 +57,21 @@ python metrics.py -o <output_dir> -d <dataset_dir>
 ```
 
 ## Blend Ensemble Model (`blend`)
+
+This model combines real and GAN-generated images using a Variational Autoencoder (VAE) for reconstruction and evaluation. Please see the README.md in the folder for more details.
+
+1. Prepare datasets:
+   - Place real images in `celebA_class_dataset` (subfolders for subsets).
+   - Place GAN-generated images (e.g., DCGAN, StyleGAN outputs) in `gan_outputs`.
+
+2. Open and run `VAE_ensemble.ipynb`:
+   - Train the VAE model with the specified latent space dimension (`latent_dim`).
+   - Save reconstructions for real and generated images.
+   - Calculate FID scores for:
+     - Real image reconstructions vs. original real images.
+     - GAN image reconstructions vs. original real images.
+
+3. Saved weights allow skipping training in subsequent runs by directly loading the model.
+
+
+
