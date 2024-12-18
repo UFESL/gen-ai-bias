@@ -1,0 +1,1 @@
+This folder should contain a subset of celebA images. eg. celebA images with attributes Smiling, Young and Male.
