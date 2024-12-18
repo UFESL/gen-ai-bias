@@ -1,0 +1,1 @@
+This folder should contain generated images from other models such as DCGAN or StyleGAN.
