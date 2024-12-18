@@ -15,4 +15,4 @@
 
 5. Once executed, the notebook saves the trained model weights. If using the saved weights, the training cells in the notebook can be skipped in subsequent runs.
 
-6. **Note**: The above folders (`celebA_class_dataset` and `gan_outputs`) are used by default by the notebook. However, any real and corresponding generated images can be used to train the model. Be sure to update the appropriate directories in the notebook if using a different dataset.
+**Note**: The above folders (`celebA_class_dataset` and `gan_outputs`) are used by default by the notebook. However, any real and corresponding generated images can be used to train the model. Be sure to update the appropriate directories in the notebook if using a different dataset.
