@@ -67,9 +67,7 @@ This model combines real and GAN-generated images using a Variational Autoencode
 2. Open and run `VAE_ensemble.ipynb`:
    - Train the VAE model with the specified latent space dimension (`latent_dim`).
    - Save reconstructions for real and generated images.
-   - Calculate FID scores for:
-     - Real image reconstructions vs. original real images.
-     - GAN image reconstructions vs. original real images.
+   - Calculate FID scores for reconstructions of both real and GAN images vs. real images.  
 
 3. Saved weights allow skipping training in subsequent runs by directly loading the model.
 
