@@ -26,7 +26,7 @@ The `biased_subsets.ipynb` file takes two folders created by the `prepare_datase
 The `fid_custom.py` file contains a custom implementation of the FID metric. It also includes functionality to save the features of images (extracted from the last layer of the InceptionV3 model) along with the mean and covariance of these features. Saving these statistics helps avoid redundant computations in the future, significantly reducing processing time.
 
 ### FID of augmented datasets
-The `fid_aug_custom.ipynb` script computes the FID score at each step given the locations of features for the biased dataset and the generated images (`folder_path`). At each step, 10 images from the generated images are successively added, and the corresponding FID scores are saved in the `fid_list_data` folder.
+The `fid_aug_custom.ipynb` file computes the FID score at each step given the locations of features for the biased dataset and the generated images (`folder_path`). At each step, 10 images from the generated images are successively added, and the corresponding FID scores are saved in the `fid_list_data` folder.
 
 ### FID graph
 The `fid_graph.ipynb` file takes the data saved in the `fid_list_data` folder and visualizes the FID scores on a graph for various models. This allows for granular observation of how the generated images affect the FID scores over time.
@@ -36,4 +36,7 @@ The `chain_fid_stats.ipynb` file computes the FID score at each stage of image g
 
 ### GANs
 The `GANs` folder contains various GAN architectures and their chained versions. Please refer to the contents of the folder for more detailed information about the specific models used.
+
+**Note:** The `celebA_data` folder contains the one-time setup for features, including the mean and covariance of CelebA images features.
+
 
