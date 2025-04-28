@@ -2,11 +2,11 @@ This folder should contain the features of CelebA images, along with the mean an
 
 Final file structure:
 
-```plaintext
-boosting/
-  ├── celebA_data/
-  │   ├── features/
-  │   │   ├── img1.npy
-  │   │   ├── img2.npy
-  │   │   └── ...
-  │   └── celebA_fid_stats.npz
+.
+├── boosting/
+│   └── celebA_data/
+│       ├── features/
+│       │   ├── img1.npy
+│       │   ├── img2.npy
+│       │   └── ...
+│       └── celebA_fid_stats.npz
