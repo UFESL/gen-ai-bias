@@ -2,7 +2,6 @@ This folder should contain the features of CelebA images, along with the mean an
 
 Final file structure:
 ```bash
-.
 ├── boosting/
 │   └── celebA_data/
 │       ├── features/
