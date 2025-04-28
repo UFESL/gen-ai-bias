@@ -1,4 +1,4 @@
-Use `prepare_datasets.ipynb` to create subclasses of the CelebA images.
+Use the `prepare_datasets.ipynb` file to create subclasses of the CelebA images.
 
 Final file structure:
 
