@@ -1,4 +1,4 @@
-This folder should contain the features of CelebA images, along with the mean and covariance of these features. Use the `fid_custom.py` script to generate both the features and the statistics, and save them in the structure below:
+This folder should contain the features of CelebA images, along with the mean and covariance of these features. Use the `fid_custom.py` file to generate both the features and the statistics, and save them in the structure below:
 
 Final file structure:
 ```bash
