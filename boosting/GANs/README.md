@@ -10,6 +10,8 @@ The models implemented include:
 Perceptual loss is computed as mean square error of real features and generated features. Whereas, the FID loss is calculated by computing FID between the real dataset (CelebA) and the biased dataset + a batch of generated images. The previous version of FID used an approximate method, but the current version uses an iterative approach (Newton-Schulz to compute matrix square root) that provides a practically exact computation of FID on the GPU. This method enables backpropagation through the FID loss.
 
 These new loss terms are incorporated into the generator’s loss function as follows:
+```plaintext
 \[
 \text{Generator Loss} = \text{Adversarial Loss} + \lambda \times \text{perceptual/FID Loss}
 \]
+```
